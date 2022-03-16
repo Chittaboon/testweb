@@ -1,0 +1,23 @@
+<input type="text" id="score"> <input type="button" value="แสดงผลเกรด" onclick="showGrade()"><br/>
+<div id="div"></div>
+<script>
+    function showGrade() {
+        var score = document.getElementById("score").value;
+        var div = document.getElementById("div");
+        var result = "คะแนน คือ "+score+" ได้เกรด ";
+
+        if( score >= 90 ) {
+            result += "A";
+        } else if( score >= 80 ) {
+            result += "B";
+        } else if( score >= 70 ) {
+            result += "C";
+        } else if( score >= 60 ) {
+            result += "D";
+        } else {
+            result += "E";
+        }
+
+        div.innerHTML = result;
+    }
+</script>

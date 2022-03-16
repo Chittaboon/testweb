@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+
+    <p id="deno"></p>
+
+    <script>
+        try{
+            lalala;// error,vartable is not defined!
+        } catch (err){
+            alert(err.name); // ReferenceError
+            alert(err.message); // lalala is not defined
+            alert(arr.stack);
+            // ReferenceError: lalala is not defined at (...call stack)
+
+            // Can also show an error as a whole
+            // The error is conver to string as "name: message"
+            alert(err); // ReferenceError: lalala is not defined 
+        }
+    </script>
+</body>
+</html>
